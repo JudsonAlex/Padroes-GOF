@@ -1,7 +1,7 @@
 package factoryMethod
 
 class PedidoProdutoFisico: IPedido {
-    override fun processar() {
-        println("Processando pedido fisico")
+    override fun processar(): String {
+        return "pedido fisico"
     }
 }

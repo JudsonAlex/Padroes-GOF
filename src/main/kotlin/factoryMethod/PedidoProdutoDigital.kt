@@ -1,7 +1,7 @@
 package factoryMethod
 
 class PedidoProdutoDigital: IPedido {
-    override fun processar() {
-        println("Processando seu download")
+    override fun processar(): String {
+        return "seu download"
     }
 }

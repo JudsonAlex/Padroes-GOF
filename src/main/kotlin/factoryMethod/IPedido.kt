@@ -1,5 +1,5 @@
 package factoryMethod
 
 interface IPedido {
-    fun processar()
+    fun processar(): String
 }

@@ -1,7 +1,7 @@
 package factoryMethod
 
-class FabricaPedidoFisico : IFabricaPedido {
-    override fun criarPedido() : IPedido {
+class FabricaPedidoFisico: FabricaPedido() {
+    override fun factoryMethod(): IPedido {
         return PedidoProdutoFisico()
     }
 }
