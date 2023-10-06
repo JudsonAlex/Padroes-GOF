@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface IPedido
+abstract class FabricaPedido
+class PedidoProdutoDigital
+class PedidoProdutoFisico
+IPedido <. FabricaPedido
+
+class FabricaPedidoDigital
+class FabricaPedidoFisico
+
+IPedido <|-- PedidoProdutoDigital
+IPedido <|-- PedidoProdutoFisico
+
+
+
+
+FabricaPedido --|> FabricaPedidoDigital
+FabricaPedido --|> FabricaPedidoFisico
+
+
+
+
+
+@enduml
